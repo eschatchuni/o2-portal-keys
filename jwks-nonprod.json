@@ -1,0 +1,12 @@
+{
+ "keys": [
+  {
+   "kty": "RSA",
+   "alg": "RS384",
+   "use": "sig",
+   "kid": "P0FpOVK9ysz5WNGC0v08QKfPM5OTjUNrlKETnzJqOvw",
+   "n": "oUjU3YY-rvNcqxjlV98qm6gNZCHuL_QPCUUYsc9FK4AUJebLKNvgKjFWs8YtCtWukIDmLwUxPBYMXHAfz81neVUIAxjr9PPzRzPo1Ds_VWpQ98hZXTnowHSNsv_cMlVVYHT52Th_FFV_pGf71KsIH7BGwzdw1BbK8TN9IZ65CO7Q029QZ4XiKs6QMhPM1SZLSuQWJf1dTl6_Xh_Z2uKPsT4H_pavkStcZFJeuwDq8-KX9WGW_K-BMd7Q3JFFE6miTZtI9FIHNSfMafMEpp8zs3TbhHVTbuYSksGHFYI-nKuQml3AdND_aTIas47PUmUIVBp46O2PuMkZZ7Z_DFG7DQ",
+   "e": "AQAB"
+  }
+ ]
+}
