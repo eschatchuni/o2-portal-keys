@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>CLO Records: finishing sign-in</title>
+<style>body{font:16px/1.5 system-ui,sans-serif;max-width:40rem;margin:2rem auto;padding:0 16px;color:#1d2733;background:#fff}</style>
+</head><body>
+<p id="m">Finishing sign-in… returning to the CLO Records app on this computer.</p>
+<script>
+(function () {
+  // Hands the health system's one-time sign-in code to the app waiting on this computer (127.0.0.1 only).
+  // The code is useless without the app's private key and its one-time PKCE secret. Nothing is stored or sent elsewhere.
+  var q = window.location.search || "";
+  var target = "http://127.0.0.1:47263/callback" + q;
+  history.replaceState(null, "", window.location.pathname);   // drop the code from this page's address and history
+  window.location.replace(target);
+  setTimeout(function () {
+    document.getElementById("m").textContent =
+      "If nothing happened, the CLO Records app is not waiting on this computer. Start the sign-in again from Terminal.";
+  }, 4000);
+})();
+</script>
+</body></html>
